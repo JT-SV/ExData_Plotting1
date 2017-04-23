@@ -20,7 +20,7 @@ ut <- "px"
 # Create DateTime column by combining the Date and Time columns
 D$DateTime <- strptime(paste(D$Date,D$Time),"%d/%m/%Y %H:%M:%S")
 
-# Select only what will be used in the plots (not necessarily just this one)
+# Select only what will be used in the plot
 # This is also good for non-wrap-around viewing of the data in head(),tail())
 # There is no need to add the day of the week to the data.
 D_plot <- D[c("DateTime","Global_active_power")]
